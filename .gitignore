@@ -1,10 +1,10 @@
 node_modules
-config
 data
 /frontend/build
 /frontend/data
 /frontend/node_modules
 /frontend/*.prettierrc
+*.env
 *.txt
 *.prettierrc
 *.exe
