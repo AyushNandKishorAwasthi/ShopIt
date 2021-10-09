@@ -16,7 +16,7 @@ cloudinary.config({
   api_key: process.env.CLOUD_APIKEY,
   api_secret: process.env.CLOUD_APISECRET,
 });
-const server = app.listen(process.env.PORT, () => {
+const server = app.listen(process.env.PORT||3000, () => {
   console.log(`Server listening on port ${process.env.PORT} in ${process.env.NODE_ENV} mode`);
 });
 process.on('unhandledRejection', (err) => {
