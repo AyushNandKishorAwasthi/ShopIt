@@ -1,0 +1,33 @@
+{
+  "name": "shopit",
+  "version": "1.0.0",
+  "description": "Ecommerce Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server.js",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/server.js",
+    "seed": "node backend/utils/seeder.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "Ayush Nand Kishor Awasthi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.26.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mdbreact": "^5.1.0",
+    "mongoose": "^6.0.4",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.3",
+    "stripe": "^8.176.0",
+    "validator": "^13.6.0"
+  }
+}
