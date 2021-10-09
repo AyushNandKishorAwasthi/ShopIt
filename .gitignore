@@ -7,7 +7,5 @@ data
 /frontend/*.prettierrc
 *.txt
 *.prettierrc
-*.png
-*.jpg
 *.exe
 *.pdf
